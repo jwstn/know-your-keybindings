@@ -19,12 +19,7 @@
     "commands": [
       {
         "command": "kyb.start",
-        "title": "Start cat coding session",
-        "category": "Know your Keybindings"
-      },
-      {
-        "command": "kyb.doRefactor",
-        "title": "Do some refactoring",
+        "title": "Add a keybinding to your list",
         "category": "Know your Keybindings"
       }
     ]
