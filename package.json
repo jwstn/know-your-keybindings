@@ -1,0 +1,47 @@
+{
+  "name": "know-your-keybindings",
+  "description": "A Extension to help your save and remember your favorite keybindings",
+  "version": "0.0.1",
+  "publisher": "DevNewbieJW",
+  "engines": {
+    "vscode": "^1.47.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:kyb.start",
+    "onCommand:kyb.doRefactor",
+    "onWebviewPanel:kyb"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "kyb.start",
+        "title": "Start cat coding session",
+        "category": "Know your Keybindings"
+      },
+      {
+        "command": "kyb.doRefactor",
+        "title": "Do some refactoring",
+        "category": "Know your Keybindings"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint . --ext .ts,.tsx",
+    "watch": "tsc -w -p ./"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^12.12.0",
+    "@types/vscode": "^1.47.0",
+    "@typescript-eslint/eslint-plugin": "^4.16.0",
+    "@typescript-eslint/parser": "^4.16.0",
+    "eslint": "^7.21.0",
+    "typescript": "^4.2.2"
+  }
+}
